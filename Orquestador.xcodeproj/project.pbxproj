@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E2938B83267BEE58006EC721 /* OrquestadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B82267BEE58006EC721 /* OrquestadorApp.swift */; };
-		E2938B85267BEE58006EC721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B84267BEE58006EC721 /* ContentView.swift */; };
 		E2938B87267BEE5C006EC721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2938B86267BEE5C006EC721 /* Assets.xcassets */; };
 		E2938B8A267BEE5C006EC721 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2938B89267BEE5C006EC721 /* Preview Assets.xcassets */; };
+		E2938B9A267BF4DD006EC721 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B99267BF4DD006EC721 /* MainView.swift */; };
+		E2938B9C267BF772006EC721 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B9B267BF772006EC721 /* DetailsView.swift */; };
+		E2938B9E267BF8BC006EC721 /* OrquestadorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2938B7F267BEE58006EC721 /* Orquestador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orquestador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2938B82267BEE58006EC721 /* OrquestadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrquestadorApp.swift; sourceTree = "<group>"; };
-		E2938B84267BEE58006EC721 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2938B86267BEE5C006EC721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2938B89267BEE5C006EC721 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2938B8B267BEE5C006EC721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2938B99267BF4DD006EC721 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E2938B9B267BF772006EC721 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrquestadorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,12 @@
 		E2938B81267BEE58006EC721 /* Orquestador */ = {
 			isa = PBXGroup;
 			children = (
+				E2938B96267BF2ED006EC721 /* Network */,
+				E2938B95267BF2D8006EC721 /* Models */,
+				E2938B94267BF2C3006EC721 /* ViewModel */,
+				E2938B93267BF2AF006EC721 /* UI */,
+				E2938B91267BF284006EC721 /* Componets */,
 				E2938B82267BEE58006EC721 /* OrquestadorApp.swift */,
-				E2938B84267BEE58006EC721 /* ContentView.swift */,
 				E2938B86267BEE5C006EC721 /* Assets.xcassets */,
 				E2938B8B267BEE5C006EC721 /* Info.plist */,
 				E2938B88267BEE5C006EC721 /* Preview Content */,
@@ -67,6 +75,60 @@
 				E2938B89267BEE5C006EC721 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2938B91267BF284006EC721 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		E2938B93267BF2AF006EC721 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E2938B98267BF381006EC721 /* Additional Views */,
+				E2938B97267BF33B006EC721 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E2938B94267BF2C3006EC721 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2938B95267BF2D8006EC721 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2938B96267BF2ED006EC721 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2938B97267BF33B006EC721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2938B99267BF4DD006EC721 /* MainView.swift */,
+				E2938B9B267BF772006EC721 /* DetailsView.swift */,
+				E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2938B98267BF381006EC721 /* Additional Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Additional Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2938B85267BEE58006EC721 /* ContentView.swift in Sources */,
+				E2938B9E267BF8BC006EC721 /* OrquestadorView.swift in Sources */,
+				E2938B9A267BF4DD006EC721 /* MainView.swift in Sources */,
 				E2938B83267BEE58006EC721 /* OrquestadorApp.swift in Sources */,
+				E2938B9C267BF772006EC721 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
