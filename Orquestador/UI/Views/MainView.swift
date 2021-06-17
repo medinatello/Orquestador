@@ -12,7 +12,7 @@ struct MainView: View {
             NavigationView{
                 OrquestadorView()
                     .navigationTitle(Text("Orquestador"))
-                DetailsView()
+                DetailsView(Texto1: "")
             }
             .navigationViewStyle(DoubleColumnNavigationViewStyle())
             
