@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct OrquestadorView: View {
-
+    
+    @State private var text1:String = ""
 
     var body: some View{
         VStack(){
-            TextField("Escribeme", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            TextField("Escribeme", text: $text1)
 
             NavigationLink(
-                destination: DetailsView(Texto1: "PASO ")){
+                destination: DetailsView(Texto1: text1)){
                         VStack(spacing: 10) {
                             Text("Sigueme").frame(maxWidth: .infinity, alignment: Alignment.leading)
+
                         }
+                
             }
 
         }
@@ -28,5 +31,11 @@ struct OrquestadorView: View {
 struct OrquestadorView_Previews: PreviewProvider {
     static var previews: some View {
         OrquestadorView()
+            .previewDevice("iphone 12")
+            .previewDisplayName("iphone 12")
+        
+        OrquestadorView()
+            .previewDevice("iPad Air (4th generation)")
+            .previewDisplayName("ipad Air (4th generation)")
     }
 }

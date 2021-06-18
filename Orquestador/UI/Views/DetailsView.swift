@@ -13,7 +13,6 @@ struct DetailsView: View{
     var body: some View{
         VStack(){
             
-
             Text(Texto1).padding()
             
             Text("chao!")
@@ -25,7 +24,15 @@ struct DetailsView: View{
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(Texto1: "Prueba 1")
+        
+        DetailsView(Texto1: "Prueba")
+            .previewDevice("iphone 12")
+            .previewDisplayName("iphone 12")
+        
+        DetailsView(Texto1: "Prueba")
+            .previewDevice("iPad Air (4th generation)")
+            .previewDisplayName("ipad Air (4th generation)")
+        
     }
 }
 
