@@ -13,6 +13,9 @@
 		E2938B9A267BF4DD006EC721 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B99267BF4DD006EC721 /* MainView.swift */; };
 		E2938B9C267BF772006EC721 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B9B267BF772006EC721 /* DetailsView.swift */; };
 		E2938B9E267BF8BC006EC721 /* OrquestadorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */; };
+		E2938BA1267D6476006EC721 /* AddObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938BA0267D6475006EC721 /* AddObjectView.swift */; };
+		E2938BA3267E39E3006EC721 /* Enumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938BA2267E39E3006EC721 /* Enumerator.swift */; };
+		E2938BA8267E63E7006EC721 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2938BA7267E63E7006EC721 /* ControllerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E2938B99267BF4DD006EC721 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E2938B9B267BF772006EC721 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrquestadorView.swift; sourceTree = "<group>"; };
+		E2938BA0267D6475006EC721 /* AddObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectView.swift; sourceTree = "<group>"; };
+		E2938BA2267E39E3006EC721 /* Enumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerator.swift; sourceTree = "<group>"; };
+		E2938BA7267E63E7006EC721 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,6 @@
 		E2938B93267BF2AF006EC721 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E2938B98267BF381006EC721 /* Additional Views */,
 				E2938B97267BF33B006EC721 /* Views */,
 			);
 			path = UI;
@@ -103,6 +108,7 @@
 		E2938B95267BF2D8006EC721 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E2938BA2267E39E3006EC721 /* Enumerator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 		E2938B97267BF33B006EC721 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2938B9F267D6409006EC721 /* config */,
 				E2938B99267BF4DD006EC721 /* MainView.swift */,
 				E2938B9B267BF772006EC721 /* DetailsView.swift */,
 				E2938B9D267BF8BC006EC721 /* OrquestadorView.swift */,
@@ -124,11 +131,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E2938B98267BF381006EC721 /* Additional Views */ = {
+		E2938B9F267D6409006EC721 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				E2938BA4267E6317006EC721 /* Components */,
+				E2938BA0267D6475006EC721 /* AddObjectView.swift */,
 			);
-			path = "Additional Views";
+			path = config;
+			sourceTree = "<group>";
+		};
+		E2938BA4267E6317006EC721 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2938BA7267E63E7006EC721 /* ControllerView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +219,11 @@
 			files = (
 				E2938B9E267BF8BC006EC721 /* OrquestadorView.swift in Sources */,
 				E2938B9A267BF4DD006EC721 /* MainView.swift in Sources */,
+				E2938BA8267E63E7006EC721 /* ControllerView.swift in Sources */,
 				E2938B83267BEE58006EC721 /* OrquestadorApp.swift in Sources */,
+				E2938BA1267D6476006EC721 /* AddObjectView.swift in Sources */,
 				E2938B9C267BF772006EC721 /* DetailsView.swift in Sources */,
+				E2938BA3267E39E3006EC721 /* Enumerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

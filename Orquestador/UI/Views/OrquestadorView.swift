@@ -21,8 +21,15 @@ struct OrquestadorView: View {
                             Text("Sigueme").frame(maxWidth: .infinity, alignment: Alignment.leading)
 
                         }
-                
-            }
+                }
+            
+            NavigationLink(
+                destination: AddObjectView ()){
+                        VStack(spacing: 10) {
+                            Text("Configuracion").frame(maxWidth: .infinity, alignment: Alignment.leading)
+
+                        }
+                }
 
         }
     }
