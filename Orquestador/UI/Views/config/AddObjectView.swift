@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AddObjectView: View{
     
-    var controlOption: [String] = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez"]
     var body: some View {
         VStack{
             
@@ -25,6 +24,9 @@ struct AddObjectView: View{
                             
                         }
                     }
+                    .listStyle(InsetListStyle())
+                    .navigationTitle("Objetos a usar")
+                    
                     
                     
                 }.frame(height: 100)
@@ -48,6 +50,7 @@ struct AddObjectView_Previews: PreviewProvider {
         Group {
             
             AddObjectView()
+                .preferredColorScheme(.dark)
                 .previewDevice("iphone 12")
                 .previewDisplayName("iphone 12")
             
@@ -85,7 +88,12 @@ extension AddObjectView {
         
         
         return VStack{
+            
+            Image(systemName: "person.fill")
+
             Text(typeName)
+                .font(  .title)
+            Spacer()
             Text(typeDescription)
 
         }
